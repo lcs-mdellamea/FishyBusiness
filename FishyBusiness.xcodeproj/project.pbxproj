@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0CAFBD202764F8A7003254BC /* FishyBusinessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFBD1F2764F8A7003254BC /* FishyBusinessApp.swift */; };
-		0CAFBD222764F8A7003254BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFBD212764F8A7003254BC /* ContentView.swift */; };
 		0CAFBD242764F8AB003254BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFBD232764F8AB003254BC /* Assets.xcassets */; };
 		0CAFBD272764F8AB003254BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFBD262764F8AB003254BC /* Preview Assets.xcassets */; };
+		0CAFBD2F2764F956003254BC /* FishFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFBD2E2764F956003254BC /* FishFinderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CAFBD1C2764F8A7003254BC /* FishyBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishyBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAFBD1F2764F8A7003254BC /* FishyBusinessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishyBusinessApp.swift; sourceTree = "<group>"; };
-		0CAFBD212764F8A7003254BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CAFBD232764F8AB003254BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CAFBD262764F8AB003254BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CAFBD2E2764F956003254BC /* FishFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishFinderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				0CAFBD1F2764F8A7003254BC /* FishyBusinessApp.swift */,
-				0CAFBD212764F8A7003254BC /* ContentView.swift */,
+				0CAFBD2D2764F90A003254BC /* Views */,
 				0CAFBD232764F8AB003254BC /* Assets.xcassets */,
 				0CAFBD252764F8AB003254BC /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				0CAFBD262764F8AB003254BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CAFBD2D2764F90A003254BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CAFBD2E2764F956003254BC /* FishFinderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CAFBD222764F8A7003254BC /* ContentView.swift in Sources */,
+				0CAFBD2F2764F956003254BC /* FishFinderView.swift in Sources */,
 				0CAFBD202764F8A7003254BC /* FishyBusinessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
