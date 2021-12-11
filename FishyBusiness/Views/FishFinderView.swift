@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FishFinderView: View {
+    
     //MARK: Stored Properties
     
     @State var providedDepth1 = ""
@@ -15,7 +16,7 @@ struct FishFinderView: View {
     @State var providedDepth3 = ""
     @State var providedDepth4 = ""
     
-    var alarm = false
+    var alarm = true
     
     //MARK: Computed Properties
     
@@ -58,12 +59,52 @@ struct FishFinderView: View {
             return nil }
         return depth4
     }
-    
+    //body
     var body: some View {
+        
         ScrollView {
-            
-            
-            
+            VStack(alignment: .leading, spacing: 20) {
+                
+                //depth1
+                Group {
+                    SectionLabelView(text: "Depth1")
+
+                    // Input: Depth1
+                    
+                    TextField("Depth1", text: $providedDepth1, prompt: Text("Numeric value greater than 0"))
+                    //                           Ternary conditional operators
+                    //                             "One line if statement"
+                    //                           CONDITION      TRUE        FALSE
+                        .foregroundColor(Depth1 == nil ? Color.red : Color.primary)
+                    
+                    // Output: Depth1
+                }
+                //depth2
+                Group {
+                    
+                    SectionLabelView(text: "Depth2")
+                    
+                    TextField("Depth2", text: $providedDepth2, prompt: Text("Numeric value greater than 0"))
+                        .foregroundColor(Height == nil ? Color.red : Color.primary)
+                }
+                //depth3
+                Group {
+                    
+                    SectionLabelView(text: "Depth3")
+                    
+                    TextField("Depth3", text: $providedDepth3, prompt: Text("Numeric value greater than 0"))
+                        .foregroundColor(Height == nil ? Color.red : Color.primary)
+                }
+                //depth4
+                Group {
+                    
+                    SectionLabelView(text: "Depth4")
+                    
+                    TextField("Depth4", text: $providedDepth4, prompt: Text("Numeric value greater than 0"))
+                        .foregroundColor(Height == nil ? Color.red : Color.primary)
+                }
+                
+            }
         }
         .navigationTitle("Fishy Business")
     }

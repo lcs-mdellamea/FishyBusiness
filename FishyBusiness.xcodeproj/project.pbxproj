@@ -11,6 +11,7 @@
 		0CAFBD242764F8AB003254BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFBD232764F8AB003254BC /* Assets.xcassets */; };
 		0CAFBD272764F8AB003254BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAFBD262764F8AB003254BC /* Preview Assets.xcassets */; };
 		0CAFBD2F2764F956003254BC /* FishFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFBD2E2764F956003254BC /* FishFinderView.swift */; };
+		0CAFBD32276503FB003254BC /* SelectionLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFBD31276503FB003254BC /* SelectionLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0CAFBD232764F8AB003254BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CAFBD262764F8AB003254BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CAFBD2E2764F956003254BC /* FishFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishFinderView.swift; sourceTree = "<group>"; };
+		0CAFBD31276503FB003254BC /* SelectionLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +72,18 @@
 		0CAFBD2D2764F90A003254BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0CAFBD30276503DF003254BC /* Helpers */,
 				0CAFBD2E2764F956003254BC /* FishFinderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0CAFBD30276503DF003254BC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0CAFBD31276503FB003254BC /* SelectionLabelView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			files = (
 				0CAFBD2F2764F956003254BC /* FishFinderView.swift in Sources */,
 				0CAFBD202764F8A7003254BC /* FishyBusinessApp.swift in Sources */,
+				0CAFBD32276503FB003254BC /* SelectionLabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
