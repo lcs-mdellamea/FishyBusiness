@@ -20,7 +20,7 @@ struct FishFinderView: View {
     
     //MARK: Computed Properties
     
-    //depth1
+    //depth1 guard
     var depth1: Double? {
         // Tests of the provided input
         // 1. Ensure that we can simply change the input into a double
@@ -35,7 +35,7 @@ struct FishFinderView: View {
             return nil }
         return depth1
     }
-    //depth2
+    //depth2 guard
     var depth2: Double? {
         guard let depth2 = Double(providedDepth2),
               depth2 > 0
@@ -43,7 +43,7 @@ struct FishFinderView: View {
             return nil }
         return depth2
     }
-    //depth3
+    //depth3 guard
     var depth3: Double? {
         guard let depth3 = Double(providedDepth3),
               depth3 > 0
@@ -51,7 +51,7 @@ struct FishFinderView: View {
             return nil }
         return depth3
     }
-    //depth4
+    //depth4 guard
     var depth4: Double? {
         guard let depth4 = Double(providedDepth4),
               depth4 > 0
@@ -63,13 +63,13 @@ struct FishFinderView: View {
 //    var fishRising
 //    var fishDiving
 //    var fishAtConstantDepth
+    
     //body
     var body: some View {
-        
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 
-                //depth1
+                //depth1 textfield
                 Group {
                     SectionLabelView(text: "Depth1")
                     
@@ -79,36 +79,37 @@ struct FishFinderView: View {
                     //                           Ternary conditional operators
                     //                             "One line if statement"
                     //                           CONDITION      TRUE        FALSE
-                        .foregroundColor(Depth1 == nil ? Color.red : Color.primary)
+                        .foregroundColor(depth1 == nil ? Color.red : Color.primary)
                     
                     // Output: Depth1
                 }
-                //depth2
+                //depth2 textfield
                 Group {
                     
                     SectionLabelView(text: "Depth2")
                     
                     TextField("Depth2", text: $providedDepth2, prompt: Text("Numeric value greater than 0"))
-                        .foregroundColor(Height == nil ? Color.red : Color.primary)
+                        .foregroundColor(depth2 == nil ? Color.red : Color.primary)
                 }
-                //depth3
+                //depth3 textfield
                 Group {
                     
                     SectionLabelView(text: "Depth3")
                     
                     TextField("Depth3", text: $providedDepth3, prompt: Text("Numeric value greater than 0"))
-                        .foregroundColor(Height == nil ? Color.red : Color.primary)
+                        .foregroundColor(depth3 == nil ? Color.red : Color.primary)
                 }
-                //depth4
+                //depth4 textfield
                 Group {
                     
                     SectionLabelView(text: "Depth4")
                     
                     TextField("Depth4", text: $providedDepth4, prompt: Text("Numeric value greater than 0"))
-                        .foregroundColor(Height == nil ? Color.red : Color.primary)
+                        .foregroundColor(depth4 == nil ? Color.red : Color.primary)
                 }
                 
             }
+            .padding()
         }
         .navigationTitle("Fishy Business")
     }
