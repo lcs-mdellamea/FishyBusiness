@@ -59,6 +59,10 @@ struct FishFinderView: View {
             return nil }
         return depth4
     }
+    
+//    var fishRising
+//    var fishDiving
+//    var fishAtConstantDepth
     //body
     var body: some View {
         
@@ -68,7 +72,7 @@ struct FishFinderView: View {
                 //depth1
                 Group {
                     SectionLabelView(text: "Depth1")
-
+                    
                     // Input: Depth1
                     
                     TextField("Depth1", text: $providedDepth1, prompt: Text("Numeric value greater than 0"))
