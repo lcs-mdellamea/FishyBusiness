@@ -16,7 +16,7 @@ struct SectionLabelView: View {
         HStack {
 
             Text(text)
-                .font(.title2)
+                .font(.title3)
                 .bold()
 
             Spacer()
